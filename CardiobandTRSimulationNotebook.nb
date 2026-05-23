@@ -1,0 +1,22 @@
+Notebook[{
+Cell["Cardioband TR Synthetic Patient-Level Demo", "Title"],
+Cell["This notebook creates simulated patient-level data constrained to the aggregate outcomes in Gray WA et al. It is for demo and teaching only; these are not real trial records.", "Subtitle"],
+Cell["Load package", "Section"],
+Cell["SetDirectory[NotebookDirectory[]];\nGet[FileNameJoin[{NotebookDirectory[], \"src\", \"CardiobandTRModel.wl\"}]];", "Input"],
+Cell["Generate synthetic data", "Section"],
+Cell["SeedRandom[42];\ndata = CardiobandTRModel`SimulatePatientDataset[42];\nDataset[data]", "Input"],
+Cell["Synthetic summary versus aggregate paper targets", "Section"],
+Cell["summary = CardiobandTRModel`SummarizeSimulatedDataset[data];\nDataset[summary]", "Input"],
+Cell["TR grade shift", "Section"],
+Cell["follow = Select[data, TrueQ[#HasOneYearEcho] &];\nBarChart[{Counts[follow[[All, \"TRGradeBaseline\"]]], Counts[follow[[All, \"TRGradeOneYear\"]]]}, ChartLabels -> {\"Baseline\", \"1 Year\"}, ChartLegends -> Automatic, Frame -> True, FrameLabel -> {\"Visit\", \"Synthetic patients\"}, PlotLabel -> \"Synthetic patient-level TR grade shift\", ImageSize -> 850]", "Input"],
+Cell["Paired annular response", "Section"],
+Cell["ListPlot[follow[[All, {\"AnnularDiameterBaselineMm\", \"AnnularDiameterOneYearMm\"}]], Frame -> True, FrameLabel -> {\"Baseline annular diameter (mm)\", \"1-year annular diameter (mm)\"}, PlotLabel -> \"Synthetic paired annular diameter response\", PlotTheme -> \"Scientific\", ImageSize -> 750]", "Input"],
+Cell["KCCQ response", "Section"],
+Cell["ListPlot[follow[[All, {\"KCCQBaseline\", \"KCCQOneYear\"}]], Frame -> True, FrameLabel -> {\"Baseline KCCQ\", \"1-year KCCQ\"}, PlotLabel -> \"Synthetic paired KCCQ response\", PlotTheme -> \"Scientific\", ImageSize -> 750]", "Input"],
+Cell["Interactive what-if: scale KCCQ treatment effect", "Section"],
+Cell["Manipulate[Module[{localData, localFollow, adjusted}, localData = CardiobandTRModel`SimulatePatientDataset[42]; localFollow = Select[localData, TrueQ[#HasOneYearEcho] &]; adjusted = Map[<|#, \"AdjustedKCCQOneYear\" -> Min[100, #[\"KCCQBaseline\"] + effectScale (#[\"KCCQOneYear\"] - #[\"KCCQBaseline\"])]|> &, localFollow]; ListPlot[adjusted[[All, {\"KCCQBaseline\", \"AdjustedKCCQOneYear\"}]], Frame -> True, FrameLabel -> {\"Baseline KCCQ\", \"Adjusted 1-year KCCQ\"}, PlotRange -> {{0, 100}, {0, 100}}, PlotLabel -> \"What-if KCCQ response scale = \" <> ToString[effectScale], ImageSize -> 700]], {{effectScale, 1.0, \"effect scale\"}, 0.25, 1.75, 0.25}]", "Input"],
+Cell["Export synthetic demo artifacts", "Section"],
+Cell["CardiobandTRModel`ExportSimulationArtifacts[FileNameJoin[{NotebookDirectory[], \"exports\"}], 42]", "Input"],
+Cell["Demo note", "Section"],
+Cell["\"IMPORTANT: synthetic_patient_data.csv is simulated from aggregate targets. It is useful for demos, UI prototypes, and teaching, but it is not recovered patient-level evidence.\"", "Input"]
+}]

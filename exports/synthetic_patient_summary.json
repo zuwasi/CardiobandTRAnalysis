@@ -1,0 +1,14 @@
+{
+	"Rows":37,
+	"SyntheticWarning":"These rows are simulated for demonstration only and are not real Cardioband patient-level trial data.",
+	"FollowUpRows":26,
+	"TRAtMostModerate1YPercent":7.31e1,
+	"TRAtLeastTwoGradeReductionPercent":7.31e1,
+	"MeanAnnularReductionPercent":2.13e1,
+	"KCCQMeanChange":1.9e1,
+	"SixMinuteWalkMeanChangeM":7.2,
+	"AllCauseDeathPercent":1.35e1,
+	"CardiovascularDeathPercent":8.1,
+	"HeartFailureHospitalizationPercent":1.08e1,
+	"SevereBleedingPercent":3.51e1
+}

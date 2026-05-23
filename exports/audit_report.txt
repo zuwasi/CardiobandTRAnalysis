@@ -1,0 +1,40 @@
+Cardioband TR EFS aggregate reproduction audit
+Paper: 1-Year Outcomes of Cardioband Tricuspid Valve Reconstruction System Early Feasibility Study
+Scope: aggregate checks from published tables/figures; patient-level data unavailable.
+PASS: 35  FAIL: 0
+
+PASS: female baseline percentage: 28/37 | actual=75.7 expected=75.7
+PASS: 1-year follow-up availability: 29/37 | actual=78.4 expected=78.4
+PASS: paired annular reduction percentage | actual=21.3 expected=21.3
+PASS: TR <= moderate at 1 year: 19/26 | actual=73.1 expected=73.1
+PASS: TR >=2 grade reduction at 1 year: 19/26 | actual=73.1 expected=73.1
+PASS: all paired 1-year patients improved >=1 TR grade | actual=100. expected=100.
+PASS: KCCQ change from rounded means | actual=19.1 expected=19.1
+PASS: KCCQ paired t-test from reported change mean/SD is P < 0.0001 | actual=0.000033098475977766384 expected="< 0.0001"
+PASS: 6MWD paired t-test from reported aggregate | actual=0.810878266004943 expected=0.8112
+PASS: all-cause mortality event percentage: 5/37 | actual=13.5 expected=13.5
+PASS: severe bleeding event percentage: 13/37 | actual=35.1 expected=35.1
+PASS: heart failure hospitalization percentage: 4/37 | actual=10.8 expected=10.8
+PASS: count-based survival complements all-cause mortality | actual=86.5 expected=86.5
+PASS: KM survival close to count-based survival | actual=85.9 expected=86.5
+PASS: KM freedom from HF hospitalization close to count complement | actual=88.7 expected=89.2
+PASS: Table 2 direction: Mean vena contracta | actual=-1 expected=-1
+PASS: Table 2 direction: 2D PISA EROA | actual=-1 expected=-1
+PASS: Table 2 direction: TV tenting height | actual=-1 expected=-1
+PASS: Table 2 direction: RA volume | actual=-1 expected=-1
+PASS: Table 2 direction: RV end-diastolic diameter | actual=-1 expected=-1
+PASS: Table 2 direction: Inferior vena contracta diameter | actual=-1 expected=-1
+PASS: Table 2 direction: LVEF by Simpson method | actual=1 expected=1
+PASS: Table 2 direction: RV TAPSE | actual=-1 expected=-1
+PASS: Table 4 percentage: Cardiovascular mortality | actual=8.1 expected=8.1
+PASS: Table 4 percentage: Myocardial infarction | actual=0. expected=0.
+PASS: Table 4 percentage: Stroke | actual=5.4 expected=5.4
+PASS: Table 4 percentage: Right coronary artery perforation | actual=0. expected=0.
+PASS: Table 4 percentage: Arrhythmia/conduction disorder requiring permanent pacing | actual=0. expected=0.
+PASS: Table 4 percentage: New renal replacement therapy | actual=0. expected=0.
+PASS: Table 4 percentage: Reintervention on study device | actual=5.4 expected=5.4
+PASS: Table 4 percentage: Severe bleeding | actual=35.1 expected=35.1
+PASS: Table 4 percentage: Tamponade | actual=2.7 expected=2.7
+PASS: Table 4 percentage: Major access site/vascular complication | actual=8.1 expected=8.1
+PASS: Table 4 percentage: All-cause mortality | actual=13.5 expected=13.5
+PASS: Table 4 percentage: Heart failure hospitalization | actual=10.8 expected=10.8

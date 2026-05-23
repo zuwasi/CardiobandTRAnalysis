@@ -1,0 +1,13 @@
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+*~
+
+# Wolfram front-end autosave/lock files
+*.nb~
+*.mx
+
+# Local scratch files
+_check*.wls

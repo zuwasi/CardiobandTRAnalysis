@@ -1,0 +1,247 @@
+[
+	{
+		"Check":"female baseline percentage: 28\/37",
+		"Actual":7.57e1,
+		"Expected":7.57e1,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"1-year follow-up availability: 29\/37",
+		"Actual":7.84e1,
+		"Expected":7.84e1,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"paired annular reduction percentage",
+		"Actual":2.13e1,
+		"Expected":2.13e1,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"TR <= moderate at 1 year: 19\/26",
+		"Actual":7.31e1,
+		"Expected":7.31e1,
+		"Tolerance":0.25,
+		"Pass":true
+	},
+	{
+		"Check":"TR >=2 grade reduction at 1 year: 19\/26",
+		"Actual":7.31e1,
+		"Expected":7.31e1,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"all paired 1-year patients improved >=1 TR grade",
+		"Actual":1.0e2,
+		"Expected":1.0e2,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"KCCQ change from rounded means",
+		"Actual":1.91e1,
+		"Expected":1.91e1,
+		"Tolerance":0.2,
+		"Pass":true
+	},
+	{
+		"Check":"KCCQ paired t-test from reported change mean\/SD is P < 0.0001",
+		"Actual":3.3098475977766384e-5,
+		"Expected":"< 0.0001",
+		"Tolerance":"directional",
+		"Pass":true
+	},
+	{
+		"Check":"6MWD paired t-test from reported aggregate",
+		"Actual":0.810878266004943,
+		"Expected":0.8112,
+		"Tolerance":1.0e-2,
+		"Pass":true
+	},
+	{
+		"Check":"all-cause mortality event percentage: 5\/37",
+		"Actual":1.35e1,
+		"Expected":1.35e1,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"severe bleeding event percentage: 13\/37",
+		"Actual":3.51e1,
+		"Expected":3.51e1,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"heart failure hospitalization percentage: 4\/37",
+		"Actual":1.08e1,
+		"Expected":1.08e1,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"count-based survival complements all-cause mortality",
+		"Actual":8.65e1,
+		"Expected":8.65e1,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"KM survival close to count-based survival",
+		"Actual":8.59e1,
+		"Expected":8.65e1,
+		"Tolerance":0.7,
+		"Pass":true
+	},
+	{
+		"Check":"KM freedom from HF hospitalization close to count complement",
+		"Actual":8.87e1,
+		"Expected":8.92e1,
+		"Tolerance":0.7,
+		"Pass":true
+	},
+	{
+		"Check":"Table 2 direction: Mean vena contracta",
+		"Actual":-1,
+		"Expected":-1,
+		"Tolerance":0,
+		"Pass":true
+	},
+	{
+		"Check":"Table 2 direction: 2D PISA EROA",
+		"Actual":-1,
+		"Expected":-1,
+		"Tolerance":0,
+		"Pass":true
+	},
+	{
+		"Check":"Table 2 direction: TV tenting height",
+		"Actual":-1,
+		"Expected":-1,
+		"Tolerance":0,
+		"Pass":true
+	},
+	{
+		"Check":"Table 2 direction: RA volume",
+		"Actual":-1,
+		"Expected":-1,
+		"Tolerance":0,
+		"Pass":true
+	},
+	{
+		"Check":"Table 2 direction: RV end-diastolic diameter",
+		"Actual":-1,
+		"Expected":-1,
+		"Tolerance":0,
+		"Pass":true
+	},
+	{
+		"Check":"Table 2 direction: Inferior vena contracta diameter",
+		"Actual":-1,
+		"Expected":-1,
+		"Tolerance":0,
+		"Pass":true
+	},
+	{
+		"Check":"Table 2 direction: LVEF by Simpson method",
+		"Actual":1,
+		"Expected":1,
+		"Tolerance":0,
+		"Pass":true
+	},
+	{
+		"Check":"Table 2 direction: RV TAPSE",
+		"Actual":-1,
+		"Expected":-1,
+		"Tolerance":0,
+		"Pass":true
+	},
+	{
+		"Check":"Table 4 percentage: Cardiovascular mortality",
+		"Actual":8.1,
+		"Expected":8.1,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"Table 4 percentage: Myocardial infarction",
+		"Actual":0.0,
+		"Expected":0.0,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"Table 4 percentage: Stroke",
+		"Actual":5.4,
+		"Expected":5.4,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"Table 4 percentage: Right coronary artery perforation",
+		"Actual":0.0,
+		"Expected":0.0,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"Table 4 percentage: Arrhythmia\/conduction disorder requiring permanent pacing",
+		"Actual":0.0,
+		"Expected":0.0,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"Table 4 percentage: New renal replacement therapy",
+		"Actual":0.0,
+		"Expected":0.0,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"Table 4 percentage: Reintervention on study device",
+		"Actual":5.4,
+		"Expected":5.4,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"Table 4 percentage: Severe bleeding",
+		"Actual":3.51e1,
+		"Expected":3.51e1,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"Table 4 percentage: Tamponade",
+		"Actual":2.7,
+		"Expected":2.7,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"Table 4 percentage: Major access site\/vascular complication",
+		"Actual":8.1,
+		"Expected":8.1,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"Table 4 percentage: All-cause mortality",
+		"Actual":1.35e1,
+		"Expected":1.35e1,
+		"Tolerance":0.15,
+		"Pass":true
+	},
+	{
+		"Check":"Table 4 percentage: Heart failure hospitalization",
+		"Actual":1.08e1,
+		"Expected":1.08e1,
+		"Tolerance":0.15,
+		"Pass":true
+	}
+]
